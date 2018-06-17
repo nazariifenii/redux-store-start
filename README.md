@@ -44,3 +44,7 @@
 </ul>
 
 <i>PS: For all data sharing/manipulation, you should use Redux and any Redux oriented modules that you found useful</i>
+</br>
+![alt text](https://github.com/vdanyliv/redux-start/blob/master/public/1.png "Product list")
+</br>
+![alt text](https://github.com/vdanyliv/redux-start/blob/master/public/2.png "Cart")
