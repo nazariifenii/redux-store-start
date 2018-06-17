@@ -1,4 +1,4 @@
-###Task for react group
+<h3>Task for react group</h3>
 
 <b>How to install:</b>
 <ul>
@@ -42,9 +42,5 @@
         <li>If user click next, show cart summary and the message about successful shopping</li>
     </ul>
 </ul>
-
-
-![alt text](https://ibb.co/gutO5J)
-![alt text](https://ibb.co/nBqd5J)
 
 <i>PS: For all data sharing/manipulation, you should use Redux and any Redux oriented modules that you found useful</i>
