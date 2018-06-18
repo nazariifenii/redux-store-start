@@ -17,7 +17,7 @@
         </ul>
     <b>Main page (header)</b>
     <ul>
-        <li>On the right side, show cart with a count of items that user want to buy (you should track changes and update count in case if user add/remove any products)</li>
+        <li>On the right side, show cart with a count of items that user wants to buy (you should track changes and update count in case if user adds/ removes any products)</li>
         <li>By clicking on the cart in header, you should navigate to cart page</li>
     </ul>
     <b>Product list page</b>
@@ -30,16 +30,16 @@
     </ul>
     <b>Cart page</b>
     <ul>
-        <li>Implement the list of products that user add to cart</li>
+        <li>Implement the list of products that user adds to cart</li>
         <li>Implement possibility to remove the product from cart</li>
-        <li>Implement possibility to increase product count (check how much items available)</li>
+        <li>Implement possibility to increase product count (check how many items are available)</li>
         <li>Implement possibility to decrease product count (and also update product available count)</li>
         <li>Show msg that Cart is empty in case if user clean it</li>
     </ul>
     <b>Extra</b>
     <ul>
         <li>In cart page show "Next" button</li>
-        <li>If user click next, show cart summary and the message about successful shopping</li>
+        <li>If user clicks next, show cart summary and the message about successful shopping</li>
     </ul>
 </ul>
 
