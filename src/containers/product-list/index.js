@@ -22,9 +22,9 @@ export class ProductList extends Component {
     ));
   }
 
-  addToCart = product => dispatch => {
-    dispatch({type: 'ADD_CART_ITEM', product});
-}
+  addToCart = product => {
+    this.props.addToCart(product);
+  }
 
   render() {
     return (<div className="App-product_list">
@@ -34,5 +34,8 @@ export class ProductList extends Component {
 }
 
 const mapStateToProps = state => ({...state});
+const mapDispatchToProps = dispatch => ({
+  addToCart: id => dispatch(addToCart(id))
+ });
  
-export default connect(mapStateToProps, {addToCart})(ProductList);
+export default connect(mapStateToProps, mapDispatchToProps)(ProductList);

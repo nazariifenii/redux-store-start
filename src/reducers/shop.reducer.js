@@ -1,4 +1,4 @@
-import {GET_CART_ITEMS, ADD_TO_CART} from '../actions/cart.actions';
+import {GET_CART_ITEMS, ADD_TO_CART, addToCart} from '../actions/cart.actions';
 import {GET_PRODUCT_LIST} from '../actions/products.action';
 
 const initState = {
@@ -63,8 +63,10 @@ export default (state = initState, action) => {
     case GET_PRODUCT_LIST:
       return state.products;
     case ADD_TO_CART:
-    console.log(action);
-    return [ ...state.inCart, action.product]
+    return  {
+      ...state,
+      inCart: state.inCart.concat(action.payload)
+    }
     default:
       return state;
   }
