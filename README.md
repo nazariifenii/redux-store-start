@@ -1,4 +1,4 @@
-<h3>Task for react group</h3>
+<h3>Online shop React/redux application</h3>
 
 <b>How to install:</b>
 <ul>
