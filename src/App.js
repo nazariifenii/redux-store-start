@@ -24,7 +24,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">My simple shop</h1>
+          <h1 className="App-title" onClick={() => this.changeNavigation('product-list')}>My simple shop</h1>
         </header>
         <div className="App-wrapper">
           <SideBar changeNavigation={this.changeNavigation}/>

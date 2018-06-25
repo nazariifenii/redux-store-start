@@ -1,10 +1,9 @@
-import {GET_CART_ITEMS} from '../actions/cart.actions';
+import {GET_CART_ITEMS, ADD_TO_CART} from '../actions/cart.actions';
 import {GET_PRODUCT_LIST} from '../actions/products.action';
 
 const initState = {
   inCart: [],
-  products: [
-    {
+  products: [{
       name: 'iPhone 4s',
       price: 200,
       available: 2
@@ -63,6 +62,9 @@ export default (state = initState, action) => {
       return state.inCart;
     case GET_PRODUCT_LIST:
       return state.products;
+    case ADD_TO_CART:
+    console.log(action);
+    return [ ...state.inCart, action.product]
     default:
       return state;
   }

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import { addToCart } from '../../actions/cart.actions';
 
 import './product-list.css';
 
@@ -16,13 +17,14 @@ export class ProductList extends Component {
         <p>{i.name}</p>
         <p>Price: {i.price}</p>
         <p>{i.available > 0 ? 'In stock' : 'Sold out'}</p>
-        <button className="add-to-cart-btn" onClick={() => this.addToCart()}>Add to card</button>
+        <button className="add-to-cart-btn" onClick={() => this.addToCart(i)}>Add to card</button>
       </div>
     ));
   }
 
-  addToCart() {
-  }
+  addToCart = product => dispatch => {
+    dispatch({type: 'ADD_CART_ITEM', product});
+}
 
   render() {
     return (<div className="App-product_list">
@@ -32,5 +34,5 @@ export class ProductList extends Component {
 }
 
 const mapStateToProps = state => ({...state});
-
-export default connect(mapStateToProps)(ProductList);
+ 
+export default connect(mapStateToProps, {addToCart})(ProductList);
